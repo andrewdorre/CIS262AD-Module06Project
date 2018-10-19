@@ -27,8 +27,7 @@ namespace PartA
             /*
             for (int i = 0; i < stack.Count; i++)
             {
-                richTextBox.AppendText(String.Format("{0}\n", stack[i]));
-            
+                richTextBox.AppendText(String.Format("{0}\n", stack[i]));            
             }
             */
 
