@@ -1,0 +1,10 @@
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartB\bin\Debug\PartB.exe.config
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartB\bin\Debug\PartB.exe
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartB\bin\Debug\PartB.pdb
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartB\obj\Debug\PartB.csprojAssemblyReference.cache
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartB\obj\Debug\PartB.frmPartB.resources
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartB\obj\Debug\PartB.Properties.Resources.resources
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartB\obj\Debug\PartB.csproj.GenerateResource.cache
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartB\obj\Debug\PartB.csproj.CoreCompileInputs.cache
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartB\obj\Debug\PartB.exe
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartB\obj\Debug\PartB.pdb
