@@ -8,3 +8,13 @@ C:\Users\andre\source\repos\Module06Project\PartA\obj\Debug\PartA.csproj.Generat
 C:\Users\andre\source\repos\Module06Project\PartA\obj\Debug\PartA.csproj.CoreCompileInputs.cache
 C:\Users\andre\source\repos\Module06Project\PartA\obj\Debug\PartA.exe
 C:\Users\andre\source\repos\Module06Project\PartA\obj\Debug\PartA.pdb
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartA\bin\Debug\PartA.exe.config
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartA\bin\Debug\PartA.exe
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartA\bin\Debug\PartA.pdb
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartA\obj\Debug\PartA.csprojAssemblyReference.cache
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartA\obj\Debug\PartA.frmPartA.resources
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartA\obj\Debug\PartA.Properties.Resources.resources
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartA\obj\Debug\PartA.csproj.GenerateResource.cache
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartA\obj\Debug\PartA.csproj.CoreCompileInputs.cache
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartA\obj\Debug\PartA.exe
+C:\Users\adorre\Documents\GitHub\CIS262AD-Module06Project\PartA\obj\Debug\PartA.pdb
