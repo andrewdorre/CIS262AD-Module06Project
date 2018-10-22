@@ -1,4 +1,27 @@
-﻿using System;
+﻿/*
+ * Andrew Dorre
+ * Module 06 Project
+ * Part A
+ * 
+ * This program will provide a gui, and allow a user to enter a string of characters that are stored
+ * in a stack and displayed on the side. The user can then use the "Pop" button to remove the numbers
+ * from the stack
+ * 
+ * Test Cases
+ * 
+ * 1. -1234987
+ * 2. (&^(*&%(%
+ * 3. 
+ * 4. w32452.535.35
+ * 
+ * ---------------->    w32452.535.35
+ *                      
+ *                      (&^(*&%(%
+ *                      -1234987
+ *                      (Pop removes w32452.535.35, and continues in order each time clicked)
+ *                       
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * Andrew Dorre
+ * Module 06 Project
+ * Part A
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -169,7 +174,8 @@ namespace PartA
             return current.Data;
 
         }
-    
+        //Some of this is unused, but I'm still having trouble completely understanding lists made from scratch
+        //When I try removing some parts, it breaks the whole thing, so I'm leaving some in.
 
         //***Exception Class***
         public class EmptyListException : Exception
