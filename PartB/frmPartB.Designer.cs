@@ -33,7 +33,6 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.lblCalc = new System.Windows.Forms.Label();
-            this.mskTextInput = new System.Windows.Forms.MaskedTextBox();
             this.txtInput = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -88,19 +87,10 @@
             this.lblCalc.Text = "label";
             this.lblCalc.Visible = false;
             // 
-            // mskTextInput
-            // 
-            this.mskTextInput.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskTextInput.Location = new System.Drawing.Point(333, 71);
-            this.mskTextInput.Mask = "999,990";
-            this.mskTextInput.Name = "mskTextInput";
-            this.mskTextInput.Size = new System.Drawing.Size(89, 26);
-            this.mskTextInput.TabIndex = 1;
-            // 
             // txtInput
             // 
             this.txtInput.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInput.Location = new System.Drawing.Point(287, 32);
+            this.txtInput.Location = new System.Drawing.Point(333, 71);
             this.txtInput.Name = "txtInput";
             this.txtInput.Size = new System.Drawing.Size(100, 26);
             this.txtInput.TabIndex = 6;
@@ -112,7 +102,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(718, 303);
             this.Controls.Add(this.txtInput);
-            this.Controls.Add(this.mskTextInput);
             this.Controls.Add(this.lblCalc);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.richTextBox1);
@@ -132,7 +121,6 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Label lblCalc;
-        private System.Windows.Forms.MaskedTextBox mskTextInput;
         private System.Windows.Forms.TextBox txtInput;
     }
 }

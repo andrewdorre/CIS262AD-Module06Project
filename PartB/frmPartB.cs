@@ -9,14 +9,18 @@
  * list, and an average of all numbers in floating point format.
  * 
  * Test Cases:
- *              1. 240          -> (random numbers should be in correct order, 240 should be at the end since
+ *              1. 240           -> (random numbers should be in correct order, 240 should be at the end since
  *                                  the random numbers are set for 0-99) Sum and average would be calculated correctly
  *                                   but since numbers are random, I can't display the exact solution here
- *              2. 999999999    -> (random numbers should be in correct order, 999999999 should be at the end since
+ *              2. 999999999     -> (random numbers should be in correct order, 999999999 should be at the end since
  *                                  the random numbers are set for 0-99) Sum and average would be calculated correctly,
  *                                  however, they would most likely appear in scientific notation
- *              3. 0
- *              4. <empty field>
+ *              3. 0             -> (add a 0 to the top of the list, calculate should appropriately include this in the 
+ *                                  sum and average)
+ *              4. <empty field> -> (add a 0 to the top of the list, calculate should appropriately include this in the 
+ *                                  sum and average)
+ *              5. -25           -> (add -25 to the top of the list, since the random numbers should all be positive values
+ *                                  calculate should appropriately include this in the sum and average
  * 
  */
 using System;
@@ -120,15 +124,9 @@ namespace PartB
             //To hold info, one for the data, one for the index number
             int userIndex = 0;
             int userInput = 0;
-            //I was going to use a normal textbox again, but since this is all about numbers
-            //I decided to use a masked text box. I set it to 9 digits, since an int max is somewhere in
-            //the 2,000,000,000 range. I think for the purpose of this project it works fine,
-            //and it prevents a lot of errors with non-number entries.
-            //I still had to put something in for the case of an empty field though
-            //I tried mskTextInput.Equals("") and .Equals(null), but finally had to google and found this:
-            //https://stackoverflow.com/questions/17757612/how-to-check-if-a-maskedtextbox-is-empty-from-a-user-input
+            
             //int failParse;
-            if (txtInput.Equals(""))
+            if (txtInput.Text.Equals(""))
             {
                 userInput = 0;
 
@@ -157,7 +155,7 @@ namespace PartB
                 }
             }
                 
-            else if (!(int.TryParse(txtInput.Text, out int failParse)))
+            else if (!int.TryParse(txtInput.Text, out int failParse))
             {
                 MessageBox.Show("Numbers only!");
                 txtInput.Text = "";                
@@ -165,10 +163,7 @@ namespace PartB
             else
             {                
                 userInput = int.Parse(txtInput.Text);
-
-                //Once again, iterate through the list until the user data is larger than
-                //the data point in the list. At that point, set the index to one past the
-                //node of the data point.
+                //Follow same format as the first if statement above:
                 for (int n = 0; n < list2.Count; n++)
                 {
                     //not sure why but it has to be >= not >. My brain hurts too much to understand why
@@ -179,10 +174,7 @@ namespace PartB
                 }
                 //And then add the data to the correct point in the linked list
                 list2.Add(userIndex, userInput);
-
-                //Here I'm clearing out the richtextbox so that it will refresh the list
-                //on the screen. The instructions said to display it on "Calculate", but 
-                //I figured this made it easier to see. Hopefully not a problem.
+                
                 richTextBox1.Text = "";
 
                 for (int n = 0; n < list2.Count; n++)
@@ -190,7 +182,8 @@ namespace PartB
                     richTextBox1.AppendText((int)list2.Get(n) + "\n");
                 }
             }
-
+            //reset the field to empty for convenience sake
+            txtInput.Text = "";
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)
@@ -209,13 +202,6 @@ namespace PartB
             //Display the results. viola
             lblCalc.Text = "Sum: " + sum.ToString() + " Average: " + average;
             lblCalc.Visible = true;
-            /*
-            richTextBox1.AppendText("\n\n");
-            for (int n = 0; n < randoms.Length; n++)
-            {
-                richTextBox1.AppendText(String.Format("{0}\n", randoms[n]));
-            }
-            */
         }
     }
 }
